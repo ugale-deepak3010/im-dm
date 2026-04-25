@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Chat - Home</title>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.15.0.min.css" />
     <style>
-        body { background-color: #f7f7f7; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .p-card { max-width: 450px; width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; padding: 2rem; overflow: hidden; }
-        .p-tabs__list { overflow: hidden !important; border-bottom: 1px solid #eee; }
-        .logo { text-align: center; margin-bottom: 2rem; font-weight: 700; font-size: 2.5rem; color: #111; letter-spacing: -1px; }
-        .p-tabs__link { font-weight: 500; font-size: 0.9rem; }
-        .tab-content { padding-top: 1.5rem; }
-        input { border-radius: 6px !important; }
-        button { border-radius: 6px !important; font-weight: 600 !important; }
+        body {
+            background-color: #f7f7f7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .p-card {
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .p-tabs__list {
+            overflow: hidden !important;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #111;
+            letter-spacing: -1px;
+        }
+
+        .p-tabs__link {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .tab-content {
+            padding-top: 1.5rem;
+        }
+
+        input {
+            border-radius: 6px !important;
+        }
+
+        button {
+            border-radius: 6px !important;
+            font-weight: 600 !important;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="p-card">
-        <div class="logo">💬 MiniChat</div>
-        
+        <div class="logo">💬 InstantMessage DirectMessage</div>
+
         <nav class="p-tabs">
             <ul class="p-tabs__list">
-                <li class="p-tabs__item"><a class="p-tabs__link" href="#create" id="tab-create" aria-selected="true">New Chat</a></li>
+                <li class="p-tabs__item"><a class="p-tabs__link" href="#create" id="tab-create" aria-selected="true">New
+                        Chat</a></li>
                 <li class="p-tabs__item"><a class="p-tabs__link" href="#join" id="tab-join">Join via Code</a></li>
                 <li class="p-tabs__item"><a class="p-tabs__link" href="#read" id="tab-read">Admin</a></li>
             </ul>
@@ -35,7 +78,8 @@
                 <p class="p-text--small">Start a fresh conversation and get a unique 4-digit code.</p>
                 <label for="create-name">Your Name</label>
                 <input type="text" id="create-name" name="name" placeholder="E.g. Deepak" required>
-                <button type="submit" class="p-button--positive u-full-width u-no-margin--bottom">Join New Meeting</button>
+                <button type="submit" class="p-button--positive u-full-width u-no-margin--bottom">Join New
+                    Meeting</button>
             </form>
         </div>
 
@@ -44,7 +88,8 @@
             <form id="join-form">
                 <p class="p-text--small">Enter the 4-digit code and your name to enter a chat.</p>
                 <label for="join-code">Chat Code (4-digit)</label>
-                <input type="text" id="join-code" name="code" placeholder="E.g. ABCD" maxlength="4" required style="text-transform: uppercase;">
+                <input type="text" id="join-code" name="code" placeholder="E.g. ABCD" maxlength="4" required
+                    style="text-transform: uppercase;">
                 <label for="join-name">Your Name</label>
                 <input type="text" id="join-name" name="name" placeholder="E.g. Deepak" required>
                 <button type="submit" class="p-button--brand u-full-width u-no-margin--bottom">Enter Chat</button>
@@ -131,4 +176,5 @@
         });
     </script>
 </body>
+
 </html>
