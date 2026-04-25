@@ -1,0 +1,20 @@
+# Disable directory listing
+Options -Indexes
+
+# Protect .txt files (chat history) from direct browser access
+<FilesMatch "\.txt$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protect documentation and config files
+<FilesMatch "^(README\.md|LICENSE|composer\.|package\.)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to hidden files (like .git, .env)
+<FilesMatch "^\.">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

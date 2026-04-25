@@ -1,0 +1,9 @@
+{"name":"Deepak","created_at":"2026-04-25 19:59:10","messages":[]}
+{"user":"Deepak","message":"Hello","time":"19:59:15","timestamp":1777147155}
+{"user":"Admin","message":"hello","time":"19:59:48","timestamp":1777147188}
+{"user":"Admin","message":"A record with the same unique values already exists. (Value: '1802') (Constraint: UNIQ_28591147CB944F1A) | Raw Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1802' for key 'UNIQ_28591147CB944F1A'","time":"20:00:18","timestamp":1777147218}
+{"user":"Admin","message":"A record with the same unique values already exists. (Value: '1802') (Constraint: UNIQ_28591147CB944F1A) | Raw Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1802' for key 'UNIQ_28591147CB944F1A'","time":"20:02:03","timestamp":1777147323}
+{"user":"Admin","message":"What it means (precisely)\r\nSQLSTATE[23000] \u2192 Integrity constraint violation\r\n1062 Duplicate entry '1802' \u2192 You are trying to insert\/update a value '1802' that already exists\r\nUNIQ_28591147CB944F1A \u2192 This is a UNIQUE constraint (index) on a column or combination of columns","time":"20:02:15","timestamp":1777147335}
+{"user":"Admin","message":"if (repository.existsById(1802)) {\r\n    throw new Exception(\"Already exists\");\r\n}","time":"20:02:30","timestamp":1777147350}
+{"user":"Admin","message":"hello","time":"20:02:34","timestamp":1777147354}
+{"user":"Admin","message":"DHPB","time":"20:04:37","timestamp":1777147477}
